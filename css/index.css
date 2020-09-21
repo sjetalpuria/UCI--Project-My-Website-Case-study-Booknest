@@ -1,0 +1,534 @@
+/*section
+{
+  border: 3px solid; 
+  border-color: red;
+}*/
+
+.flash-container {
+  width: 100%;
+  position: fixed;
+  z-index: 700;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.alert {
+  text-align: center !important;
+  width: 500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color:#211809!important;
+}
+html{
+  scroll-behavior: smooth;
+  overflow: auto;
+  padding: 20px;
+  scroll-padding-top: 80px;
+  overflow-x: hidden;
+}
+
+
+header {
+   padding: 0px;
+   margin:0px;
+  box-sizing: border-box;
+}
+
+
+section.sec1{
+  
+  width: 100%;
+  height:100vh;
+  background:url(https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.myName
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.Logo
+{
+  width:50px;
+  height:auto;
+}
+h1
+{
+  font-family: "Alegreya Sans SC", serif;
+  font-size: 36px;
+  /*color: #260303;*/
+  color:#590202;
+}
+h2
+{
+  font-family:"Alegreya Sans SC", serif;
+  font-size: 30px;
+  color: #590202;
+}
+
+h4{
+  font-family:"Alegreya Sans SC", serif;
+  font-size: 25px;
+  color: #590202;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+p
+{
+  font-family: "Source Sans Pro", Sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+nav
+{
+  width: 100%;
+  height:50px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+ background:#c48c97d7;
+  
+  border-top: 1px solid rgba(255,255,255, 0.2);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  position: sticky;
+  top: 0px;
+  z-index: 500;
+}
+
+nav ul
+{
+  display: flex;
+  margin:0px;
+  padding: 0px 100px;
+  float: right;
+  z-index: 500;
+}
+
+nav ul li
+{
+  list-style: none;
+  color: black;
+   float: right; 
+   padding: 10px;
+   font-size: 20px;
+}
+
+nav ul li a
+{
+  display: block;
+  color: black;
+  padding: 0px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Alegreya Sans SC",serif;
+  transition: all 0.2s ease-in;
+}
+/* Button */
+.Button {
+  position: relative;
+  background-color: transparent;
+  border: 4px,solid #590202 ;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #000;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s; 
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Button:hover {
+  position: relative;
+  background-color:#590202 ;
+  border: none ;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  transition-duration: 0.4s; 
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.Button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
+.fa-bars {
+  display: none !important;
+  color: #FF6363;
+  float: right;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.fa-times {
+  color: #FF6363;
+  float: right;
+  padding: 20px;
+  right: 0;
+  z-index: 600;
+  cursor: pointer;
+}
+
+.headerImage
+{
+  background: url(https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%; 
+}
+
+  
+ nav ul li a:hover
+ {
+   color: white !important;
+ }
+
+ nav ul li a::after {
+  display: block;
+    margin: 0 auto;
+  margin-top: 5px;
+  width: 0;
+    height: 2px;
+    background-color: #fff  !important; 
+    content: '' !important;
+  opacity: 0 !important;
+  transition: width 0.6s, opacity 0.8s;
+  transition: width 0.6s, opacity 0.8s;
+  transition: width 0.6s, opacity 0.8s;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after
+ {
+  opacity: 1 !important;
+  width: 100% !important;
+}
+
+
+ 
+/*About Me*/
+.aboutBox
+{
+   display: flex;
+   align-items: center;
+   
+}
+
+#myImage {
+  width: 300px;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+#myImage:hover 
+{
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}     
+
+.paraOnMe
+{
+  color:#000;
+  margin-left: 100px;
+  margin-right: 300px;
+   
+}
+
+
+/*Case studies*/
+.Case_studies_images img
+{
+height: auto;
+width: 270px;
+display: inline-block;
+padding-left: 60% ;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+/*Grid Areas*/
+.GridAreas
+{
+  grid-area: myArea;
+}
+
+/*Grid Conatiner*/
+.GridAreas
+{
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea' ;
+  grid-row-gap: 50px;
+  /*border: 3px solid red;*/
+}
+
+
+
+.Flex_mySkills
+{
+  display:block;
+  width: 100%;
+ 
+}
+
+.ImageContainer
+{  
+  width: auto;
+  height: 200px;
+      
+}
+
+.imageSkills
+{
+  width: 100%;
+  height: 80%;
+}
+ 
+
+.inline-block_Skills
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+
+@media screen and (max-width: 600px)
+{
+  .Flex_mySkills
+    {
+      flex-direction: row;
+      
+    }
+}
+
+.list
+{
+  display:flex;
+  flex-direction: column;
+  color:#000;
+}
+
+.inline-block_Skills
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+/*footer block*/
+footer
+{
+background-color:#c48c97d7;;
+width: 100%;
+
+}
+
+.Copyright
+{
+  position: static;
+  padding:10px;
+  text-align:center;
+  
+}
+
+.iconsContainer{
+ overflow:visible;
+ padding-top:10px;
+ padding-bottom:10px;
+ padding-left: 0px;
+ text-align:center;
+ 
+ object-fit: fill;
+
+}
+
+.icons
+{
+  width: 30px;
+  padding:20px;
+}
+
+  /*media-only screen*/
+  @media screen and (max-width: 600px) {
+    .Flex_mySkills
+    {
+      flex-direction: row;
+      
+    }
+    .inline-block_Skills
+    {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .list
+    {
+      display:flex; 
+      flex-direction: row;
+      color: #ffe1a0;
+    }
+
+    li{
+    
+      display: inline-block;
+     
+      color:black;
+      margin: 0px;
+      
+      }
+
+    
+    .Grid_Container_Case_Studies
+    {
+      grid-gap : 20px;
+      
+    }
+     
+    .Case_studies_images
+    {
+      height: 220px;
+      width: 220px;
+      justify-content: center;
+      padding-top: 75%;
+      padding-left: 0rem;
+      
+    }
+  }
+
+/*Contact Form*/
+  
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid  black ; 
+    background: transparent;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  label
+  {
+    color: black;
+  }
+
+  #inText
+  {
+    color: black;
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    
+    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    
+    padding: 20px;
+  }
+
+  .QR_code 
+  {
+    display:flex;
+     justify-content: center;
+
+  }
+
+  .QR_code img
+  {
+    width: 100px;
+    height:100px;
+  }
+.content_contact
+{
+  text-align: center;
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: black;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+    
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
