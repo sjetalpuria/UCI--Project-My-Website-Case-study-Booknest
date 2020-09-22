@@ -37,6 +37,7 @@ var main = function() {
         }, 500);
       });
     };
+    
   
     //contact        
     $('.Contact').find('.form-control').focus(function() {
